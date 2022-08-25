@@ -8,7 +8,7 @@ public class GenerateSubSetFromString {
 
     private static void generateSubString(String str, String current, int i) {
         if (i == str.length()) {
-            System.out.println(current);
+            System.out.print("{ "+current+" }, ");
             return;
         }
         generateSubString(str, current, i+1);
